@@ -1,3 +1,4 @@
+from color import color
 class Human():
 
 	def __init__(self, marker):
@@ -11,14 +12,14 @@ class Human():
 		while (row < 0 or row > 2 or col < 0 or col > 2) or state[row][col] != " ":
 
 			if not entry:
-				print("Wrong inputs!")
+				print("Wrong location!")
 			
 			entry = False
 
 			try:
-				pos = int(input("Your turn, Enter position: "))
+				pos = int(input(f"Enter position: "))
 			except ValueError:
-				pass
+				continue
 
 			row = (pos-1) // 3
 			col = (pos-1) % 3

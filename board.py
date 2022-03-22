@@ -1,3 +1,4 @@
+from color import color
 class Board:
 
 	def __init__(self):
@@ -65,7 +66,7 @@ class Board:
 				if self._state[i][j] == " ":
 					print_state[i][j] = i*self._limit + (j+1)
 				else:
-					print_state[i][j] = self._state[i][j]
+					print_state[i][j] = color[self._state[i][j]]
 
 		print()
 		print(f"{print_state[0][0]} | {print_state[0][1]} | {print_state[0][2]}")
