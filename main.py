@@ -4,9 +4,6 @@ from human import Human
 from randomBot import RandomBot
 from superBot import SuperBot
 
-# TODO
-# publish things
-
 def get_player(marker):
 
 	entry = True
